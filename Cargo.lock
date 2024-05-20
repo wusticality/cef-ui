@@ -410,6 +410,28 @@ dependencies = [
 ]
 
 [[package]]
+name = "cef-ui-windowless"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "cef-ui",
+ "cef-ui-util",
+ "tracing",
+ "tracing-log",
+ "tracing-subscriber",
+ "winit",
+]
+
+[[package]]
+name = "cef-ui-windowless-helper"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "cef-ui-helper",
+ "cef-ui-util",
+]
+
+[[package]]
 name = "cesu8"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"

@@ -5,36 +5,68 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug",
+            "name": "Simple Debug",
             "type": "lldb",
             "request": "launch",
             "program": "${workspaceFolder}/target/debug/cef-ui-simple",
             "cwd": "${workspaceFolder}",
-            "preLaunchTask": "cef-build-debug"
+            "preLaunchTask": "cef-build-simple-debug"
         },
         {
-            "name": "Release",
+            "name": "Simple Release",
             "type": "lldb",
             "request": "launch",
             "program": "${workspaceFolder}/target/release/cef-ui-simple",
             "cwd": "${workspaceFolder}",
-            "preLaunchTask": "cef-build-release"
+            "preLaunchTask": "cef-build-simple-release"
         },
         {
-            "name": "macOS Debug",
+            "name": "Windowless Debug",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/cef-ui-windowless",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "cef-build-windowless-debug"
+        },
+        {
+            "name": "Windowless Release",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/release/cef-ui-windowless",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "cef-build-windowless-release"
+        },
+        {
+            "name": "macOS Simple Debug",
             "type": "lldb",
             "request": "launch",
             "program": "${workspaceFolder}/target/debug/cef-ui-simple.app/Contents/MacOS/cef-ui-simple",
             "cwd": "${workspaceFolder}",
-            "preLaunchTask": "cef-build-debug"
+            "preLaunchTask": "cef-build-simple-debug"
         },
         {
-            "name": "macOS Release",
+            "name": "macOS Simple Release",
             "type": "lldb",
             "request": "launch",
             "program": "${workspaceFolder}/target/release/cef-ui-simple.app/Contents/MacOS/cef-ui-simple",
             "cwd": "${workspaceFolder}",
-            "preLaunchTask": "cef-build-release"
+            "preLaunchTask": "cef-build-simple-release"
+        },
+        {
+            "name": "macOS Windowless Debug",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/cef-ui-windowless.app/Contents/MacOS/cef-ui-windowless",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "cef-build-windowless-debug"
+        },
+        {
+            "name": "macOS Windowless Release",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/release/cef-ui-windowless.app/Contents/MacOS/cef-ui-windowless",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "cef-build-windowless-release"
         }
     ]
 }
